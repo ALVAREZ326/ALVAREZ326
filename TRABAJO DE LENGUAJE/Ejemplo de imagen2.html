@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración de caracteres para soportar tildes y caracteres especiales -->
+    <meta charset="UTF-8">
+    
+    <!-- Hacer que la página sea responsiva en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <title>Mapa Interactivo de México</title>
+
+    <!-- Favicon (ícono en la pestaña del navegador) -->
+    <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/1200px-Flag_of_Mexico.svg.png">
+
+    <!-- Estilos CSS internos para mejorar la presentación -->
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Fuente del texto */
+            text-align: center; /* Centrar contenido */
+            background-color: #f4f4f4; /* Color de fondo */
+            margin: 20px;
+        }
+
+        h1 {
+            color: #006400; /* Verde oscuro, similar a la bandera de México */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+        }
+
+        address {
+            font-style: normal;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        img {
+            border: 3px solid #006400; /* Borde verde alrededor de la imagen */
+            border-radius: 10px; /* Bordes redondeados */
+            max-width: 100%; /* Hacer la imagen responsiva */
+            height: auto;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
+        }
+
+        p {
+            font-size: 18px;
+            color: #444;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado principal -->
+    <h1>Mapa Interactivo de México</h1>
+
+    <!-- Información de contacto -->
+    <address>
+        Contacto: DANIEL ALVAREZ, 2970 QUIBDO, CHOCÓ
+    </address>
+
+    <!-- Breve descripción -->
+    <p>Explora el mapa de México y haz clic en la imagen para ver un mapa detallado de los estados del país.</p>
+
+    !-- Imagen del mapa con un área interactiva -->
+    <img src="./images/147vs.jpg" 
+         usemap="#mapa" 
+         alt="Mapa de México">
+
+    <!-- Mapa interactivo con una zona clickeable -->
+    <map name="mapa">
+        <!-- Área rectangular clickeable dentro de la imagen -->
+        <area shape="rect" 
+              coords="34,44,270,350" 
+              href="https://www.cervantesvirtual.com/portales/constituciones_hispanoamericanas/imagenes_mapas/imagen/imagenes_mapas_06-mexico_mapa_de_los_estados/" 
+              alt="Mapa detallado de los estados de México">
+    </map>
+
+    <!-- Información adicional -->
+    <p>Los mapas interactivos permiten explorar regiones específicas con un solo clic. En este caso, puedes ver un mapa más detallado de los estados de México.</p>
+
+    <!-- Pie de página -->
+    <footer>
+        &copy; 2025 - Proyecto Educativo | Creado por Daniel Álvarez
+    </footer>
+
+</body>
+</html>

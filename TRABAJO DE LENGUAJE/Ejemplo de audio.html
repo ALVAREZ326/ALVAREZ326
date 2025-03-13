@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración de caracteres para soportar tildes y caracteres especiales -->
+    <meta charset="UTF-8">
+    
+    <!-- Hacer que la página sea responsiva en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <title>Ejemplo de Audio</title>
+    
+    <!-- Estilos CSS internos opcionales para mejorar la presentación -->
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Fuente del texto */
+            text-align: center; /* Centrar contenido */
+            background-color: #f4f4f4; /* Color de fondo */
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333; /* Color del título */
+        }
+
+        audio {
+            margin-top: 10px; /* Espacio superior para el reproductor */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado principal -->
+    <h1>Ejemplo de Audio en HTML</h1>
+
+    <!-- Sección donde se inserta el audio -->
+    <audio controls>
+        <!-- Fuente del audio en formato MP3 -->
+        <source src="audio-ejemplo.mp3" type="audio/mpeg">
+        
+        <!-- Fuente adicional en formato OGG para mayor compatibilidad -->
+        <source src="audio-ejemplo.ogg" type="audio/ogg">
+        
+        <!-- Mensaje alternativo si el navegador no soporta el audio -->
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <!-- Descripción del audio -->
+    <p>Este es un archivo de audio de ejemplo insertado en una página web usando la etiqueta &lt;audio&gt;.</p>
+
+</body>
+</html>
+

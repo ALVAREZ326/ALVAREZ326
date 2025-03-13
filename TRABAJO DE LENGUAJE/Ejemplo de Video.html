@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración de caracteres para soportar tildes y caracteres especiales -->
+    <meta charset="UTF-8">
+    
+    <!-- Hacer que la página sea responsiva en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <title>Ejemplo de Video</title>
+    
+    <!-- Estilos CSS internos opcionales para mejorar la presentación -->
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Fuente de texto */
+            text-align: center; /* Centrar contenido */
+            background-color: #f4f4f4; /* Color de fondo */
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333; /* Color del título */
+        }
+
+        video {
+            border: 2px solid #333; /* Borde alrededor del video */
+            border-radius: 10px; /* Bordes redondeados */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado principal -->
+    <h1>Ejemplo de Video en HTML</h1>
+
+    <!-- Sección donde se inserta el video -->
+    <video width="480" height="320" controls>
+        <!-- Fuente del video en formato MP4 -->
+        <source src="video-ejemplo.mp4" type="video/mp4">
+        
+        <!-- Mensaje alternativo si el navegador no soporta el video -->
+        Tu navegador no soporta el elemento de video.
+    </video>
+
+    <!-- Descripción del video -->
+    <p>Este es un video de ejemplo insertado en una página web usando la etiqueta &lt;video&gt;.</p>
+
+</body>
+</html>
+
